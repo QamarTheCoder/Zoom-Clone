@@ -3,12 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Navbar from './Navbar';
 import Hero from './Landing Page/Main section/Hero';
+import AboutUs from './Landing Page/About Us section/AboutUs';
 import reportWebVitals from './reportWebVitals';
+import Product from './Landing Page/Product Section/Product';
+import Pricing from './Landing Page/Pricing section/Pricing';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Hero />
+    <Pricing />
   </React.StrictMode>
 );
 
