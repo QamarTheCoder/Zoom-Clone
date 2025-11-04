@@ -7,7 +7,6 @@ import Navbar from "../../Navbar";
 export default function Hero(){
     return(
         <>
-        <Navbar></Navbar>
         <div className="vh-100 d-flex justify-content-center align-items-center flex-column" style={{backgroundColor:'#2150C5'}}>
             <div>
                 <img  style={{width:'150px',opacity:"0.7"}} className="mb-5" src={chummm}/>

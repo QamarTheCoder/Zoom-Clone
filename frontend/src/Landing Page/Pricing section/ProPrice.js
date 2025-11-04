@@ -42,7 +42,8 @@ export default function ProPricing({
           minHeight:  isPro ?  "670px":"700px",
           border: isPro ? "2px solid #5E91F6" : "2px solid #E0E4E8",
           borderTopLeftRadius: isPro ? "0px" : "20px",
-          borderTopRightRadius: isPro ? "0px" : "20px"
+          borderTopRightRadius: isPro ? "0px" : "20px",
+          zIndex:'1'
         }}
       >
         <div className="card-body d-flex flex-column">
