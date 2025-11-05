@@ -9,15 +9,23 @@ import Product from './Landing Page/Product Section/Product';
 import Pricing from './Landing Page/Pricing section/Pricing';
 import Reviews from './Landing Page/Reviews Section/Reviews';
 import LandingPage from './Landing Page/LandingPage';
+import SingUp from './Signup/Signup';
+import LoginPage from './Login/Login';
+import {Route,Routes,BrowserRouter} from 'react-router-dom'
+import Error from './Error';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <LandingPage />
-  </React.StrictMode>
+  <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<LandingPage/>} />
+      <Route path='/signup' element={<SingUp/>} />
+      <Route path='/signin' element={<LoginPage/>} />
+      
+      <Route path='/*' element={<Error/>}/>
+    </Routes>
+  </BrowserRouter>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
 reportWebVitals();
