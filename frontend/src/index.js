@@ -13,6 +13,7 @@ import SingUp from './Signup/Signup';
 import LoginPage from './Login/Login';
 import {Route,Routes,BrowserRouter} from 'react-router-dom'
 import Error from './Error';
+import DashboardHome from './Dashboard/dashboardHome';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -21,6 +22,7 @@ root.render(
       <Route path='/' element={<LandingPage/>} />
       <Route path='/signup' element={<SingUp/>} />
       <Route path='/signin' element={<LoginPage/>} />
+      <Route path='/dashboard' element={<DashboardHome/>} />
       
       <Route path='/*' element={<Error/>}/>
     </Routes>
